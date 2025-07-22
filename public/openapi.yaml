@@ -1,1 +1,33 @@
+info:
+    description: |-
+        基于本地服务接入使用（本地服务器开放端口）
+        基于公网服务接入使用（有公网域名）
+    title: 可乐鸡翅_端侧插件
+    version: v1
+openapi: 3.0.1
+paths:
+    /getfinish:
+        post:
+            operationId: getfinish
+            requestBody:
+                content: {}
+            responses:
+                "200":
+                    content:
+                        application/json:
+                            schema:
+                                properties:
+                                    finished:
+                                        description: 无
+                                        type: string
+                                type: object
+                    description: new desc
+                default:
+                    description: ""
+            summary: |-
+                用于测试；返回json:
+                {
+                "finished":"true"
+                }
+            x-functionName: getfinish
 
